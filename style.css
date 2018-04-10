@@ -1,0 +1,329 @@
+/*
+Theme Name: iKyril Theme
+Them Author: Kyril J.
+Author URI: http://www.iKyril.com
+Version: 1.0
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+	font-family: Arial, sans-sefif;
+	font-size: 14px;
+	color: #333;
+	background: linear-gradient(#aecde5, #f4f9fc, #aecde5);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+/* General Layout */
+div.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 5px 20px 15px;
+	background: #fff;
+	border-radius: 20px;
+	border: 1px solid #D3D3D3;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+article.post {
+	border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+	border-bottom : none;
+}
+
+/*Header */
+.site-header {
+	border-bottom: 2px solid #999;
+}
+
+/* Media Menu */
+nav.media-nav {
+	width: 100%;
+	background: #00FFFF;
+}
+
+nav.media-nav {
+	width: 100%;
+	background: #00FFFF;
+}
+
+nav.media-nav ul
+{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav.media-nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	border-bottom: 1px solid #000
+}
+
+nav.media-nav ul li:hover{
+	background: #007f7f;
+	color: #fff;
+}
+
+nav.media-nav ul li a{
+	color: #006666;
+	text-decoration: none;
+}
+
+
+nav.media-nav .toggle
+{
+	width: 100%;
+	padding: 10px 20px;
+	background: #001f44;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+nav.media-nav .toggle:hover
+{
+	cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+	nav.media-nav {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px)
+{
+
+	nav.site-nav
+	{
+		display: none;
+	}
+
+	nav.media-nav .toggle
+	{
+		display: block;
+	}
+	nav.media-nav ul
+	{
+		width: 100%;
+		display: none;
+	}
+	nav.media-nav ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	nav.media-nav .active
+	{
+		display: block;
+	}
+
+	div.container {
+		border-radius: 0px;
+	}
+
+}
+
+/* Main Column. */
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+/* Side Column. */
+.secondary-column {
+	width: 33%;
+	float: right;
+}
+
+/* Footer */
+.site-footer {
+
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+
+/* Navigation Menus */
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+/* Site Header Menu */
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #BBB;
+	border-bottom: none;
+	text-decoration: none;
+
+}
+
+.site-header nav ul li a:hover {
+	background-color: #ECECEC;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	background-color: #006ec3;
+	color: #FFF;
+}
+
+/* Footer Menu */
+.site-footer nav ul li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #BBB;
+}
+
+/*
+PAGE.PHP
+*/
+/* Page Layout */
+article.page h2 {
+	font-size: 300%;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: "", display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* Two Column Title Layout */
+div.title-column{
+  width: 25%;
+  float: left;
+}
+
+div.text-column{
+  width: 75%;
+  float: right;
+}
+
+/* Post Styles */
+.post h2 {
+	margin-bottom: 0;
+}
+
+p.post-info {
+	font-size: 87%;
+	color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: #999;
+}
+
+
+/* Info box */
+div.info-box{
+  width: 30%;
+  float: right;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #EEE;
+}
+
+
+.collapse-menu{
+	display: none;
+}
+
+
+/* Image Styles */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.has-thumbnail {
+	position: relative;
+	padding-left: 200px;
+}
+
+.post-thumbnail {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Search */
+div.hd-search {
+	float: right;
+}
+
+div.hd-search label {
+	position: absolute;
+	left: -9999px;
+}
+
+div.hd-search #searchsubmit {
+	background-color: #006ec3;
+	color: #FFF;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
+}
+
+div.hd-search #s {
+	vertical-align: top;
+	padding: 3px 0;
+}
+
+#menu-icon{
+	background: url(menu-icon.png);
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+	.has-thumbnail
+	{
+		position: relative;
+		padding-left: 0px;
+	}
+
+	.post-thumbnail
+	{
+		display: none;
+	}
+
+
+}
